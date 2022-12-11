@@ -1,25 +1,27 @@
-
-
 import React, {useState} from 'react';
-import NewComponent, {topCars} from "./NewComponent";
+import {Button} from './03_button/03_button';
+
+// import NewComponent, {topCars} from "./NewComponent";
+
+
 
 function App() {
-   /* const [students, setStudents] = useState([
-            {id: 1, name: "James", age: 8},
-            {id: 2, name: "Robert", age: 18},
-            {id: 3, name: "John", age: 28},
-            {id: 4, name: "Michael", age: 38},
-            {id: 5, name: "William", age: 48},
-            {id: 6, name: "David", age: 58},
-            {id: 7, name: "Richard", age: 68},
-            {id: 8, name: "Joseph", age: 78},
-            {id: 9, name: "Thomas", age: 88},
-            {id: 10, name: "Charles", age: 98},
-            {id: 11, name: "Christopher", age: 100},
-        ]
-    )*/
+
+    const buttonFor1 = (subscriber:string, age:number, address:string) => {
+        console.log(subscriber,age,address)
+    }
+
+    const buttonFor2 = (subscriber:string) => {
+        console.log(subscriber)
+    }
+
+
     return (
-        <NewComponent topCars={topCars}/>
+        // <NewComponent topCars={topCars}/>
+        <div>
+            <Button name={"MyYouTubeChanel-1"} callBack={()=>buttonFor1("I am Vasiliy", 21, "Minsk")}/>
+            <Button name={"MyYouTubeChanel-2"} callBack={()=>buttonFor2("I am Ivan")}/>
+        </div>
     );
 }
 
