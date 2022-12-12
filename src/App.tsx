@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Counter } from './04_use_State/04_use_state';
 
 
 
@@ -8,9 +9,16 @@ import React from 'react';
 function App() {
 
 
-    return{
+    return(
 
-    }
+        <div>
+
+            <Counter/>
+
+        </div>
+
+
+    )
 }
 
 export default App;
