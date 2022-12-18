@@ -1,24 +1,11 @@
-import React, {useState} from 'react';
-import { Counter } from './04_use_State/04_use_state';
-
-
-
-
+import React, {Fragment, useState} from 'react';
+import FilterMoney from "./05_filter_method/05_filter";
 
 
 function App() {
 
+   return <FilterMoney/>
 
-    return(
-
-        <div>
-
-            <Counter/>
-
-        </div>
-
-
-    )
 }
 
 export default App;
